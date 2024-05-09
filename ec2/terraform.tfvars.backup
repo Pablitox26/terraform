@@ -1,23 +1,23 @@
-aws_region   = ""
-aws_profile  = ""
-aws_key_name = ""
-aws_credentials = ""
-aws_config = ""
+aws_region   = "us-east-1"
+aws_profile  = "default"
+aws_key_name = "my_key"
+aws_credentials = "~/.aws/credentials"
+aws_config = "~/.aws/config"
 
 tags = {
-  "env" : "",
-  "owner" : "",
+  "env" : "dev",
+  "owner" : "MyName",
   "cloud" : "AWS",
   "IAC" : "Terraform",
   "IAC_version" : "1.6.2",
-  "project" : "",
-  "region" : ""
+  "project" : "MyProject",
+  "region" : "Region"
 }
 
-vpc_cidr = ""
+vpc_cidr = "10.10.0.0/16"
 
-available_zones = [""]
-public_subnets  = [""]
+available_zones = ["us-east-1a"]
+public_subnets  = ["10.10.0.0/24"]
 
 custom_ingress_rules = [
   {
@@ -39,16 +39,16 @@ custom_egress_rules = [
   }
 ]
 
-instances = ["instance-name"]
+instances = ["MyInstance"]
 
 ec2_specs = {
-  "ami"           = "",
-  "instance_type" = ""
+  "ami"           = "ami-04b70fa74e45c3917",
+  "instance_type" = "t2.micro"
 }
 
 ebs_specs = {
-  "volume_type" : ""
-  "volume_size" : 8
+  "volume_type" : "gp2"
+  "volume_size" : 30
   tags = {
     MountPoint = "root-block"
   }
