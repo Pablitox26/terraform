@@ -10,7 +10,7 @@ This repository contains a Terraform configuration to create one or multiple EC2
 
 ## Setup
 1. Clone the file ```terraform.tfvars.backup``` and rename it to ```terraform.tfvars```
-2. Fill in the variables in ```terraform.tfstate```
+2. Fill in the variables in ```terraform.tfvars```
 3. To run this example you need to execute:
 ```sh
 $ terraform init
